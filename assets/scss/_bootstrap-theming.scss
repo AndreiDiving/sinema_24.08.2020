@@ -14,8 +14,14 @@
         }
 
         > li > a {
+            @include sm-min {
+               border-radius: 4px; 
+            }
+            @include sm {
+                text-align: center;
+            }
             //margin: 5px;
-            border-radius: 4px;
+            
             &:focus, 
             &:hover {
                 background-color: $color-primary;
@@ -23,10 +29,57 @@
         }
     }
 }
- 
-.navbar-left li { 
-    margin: 5px 5px 5px 0;
+
+.navbar-header {
+    text-align: center;
 }
-.navbar-right li {
-    margin: 5px 0 0 5px;
+
+.navbar-toggle {
+    float: none;
+    margin-right: 0;
+}
+ 
+.navbar-left {
+    @include sm-min {
+        li { 
+            margin: 5px 5px 5px 0;   
+        }     
+    }
+    @include sm {
+        margin-bottom: 0;
+    }
+} 
+.navbar-right {
+    @include sm-min {
+        li {
+            margin: 5px 0 0 5px;
+        }  
+    } 
+    @include sm {
+        margin-top: 0;
+    }
+}
+
+.panel {
+    border: none;
+    background-color: darken($color-light, 8%);
+    margin-bottom: 30px;
+
+    &-info > .panel-heading {
+        color: $color-light;
+        background-color: $color-accent;
+        border: none;
+        font-size: 1.2rem;
+        letter-spacing: 0.1em;
+    }
+
+    &-body {
+        border: 1px solid $color-gray;
+        border-radius: 0 0 4px 4px; 
+    }
+}
+
+
+.input-group-lg > .form-control  { 
+    font-size: 14px;   
 }
