@@ -5,3 +5,4 @@ temp/
 # IntellijIdea files
 .idea/
 */scss-comb/
+node_modules
