@@ -63,11 +63,76 @@
 
 <div class="container">
   <div class="row">
-    <main class=" main col-lg-9 col-lg-push-3 col-md-8 col-md-push-4">main</main>
+    <main class=" main col-lg-9 col-lg-push-3 col-md-8 col-md-push-4">
+      
+      <div class=" site-search panel panel-info hidden-lg hidden-md">
+        <div class="panel-heading">Поиск</div>
+        <div class="panel-body">
+          <form action="search">
+            <div class="input-group input-group-lg">
+              <input class="form-control" type="search" placeholder="Поиск по сайту">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </span>
+            </div> 
+          </form>
+        </div>
+      </div>
+
+      <div class="user-login panel panel-info hidden-lg hidden-md">
+        <div class="panel-heading">Пользователь</div>
+        <div class="panel-body">
+          <div>
+            <ul class="user-login__tabs nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#user-login-main" aria-controls="home" role="tab" data-toggle="tab">
+                <span class="glyphicon glyphicon-log-in" title="Вход"></span>
+              </a></li>
+              <li role="presentation"><a href="#user-registration-main" aria-controls="profile" role="tab" data-toggle="tab">
+                <span class="glyphicon glyphicon-user" title="Регистрация"></span>
+              </a></li>
+            </ul>
+          
+            <div class="user-login__content tab-content">
+              <div role="tabpanel" class="tab-pane active" id="user-login-main">
+                <form action="login">
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="text" placeholder="Логин">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="password" placeholder="Пароль">
+                  </div>
+                  <button class="btn btn-default btn-lg btn-block">Вход</button>
+                </form>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="user-registration-main">
+                <form action="registration">
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="text" placeholder="Логин">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="password" placeholder="Пароль">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="email" placeholder="Email">
+                  </div>
+                  <button class="btn btn-default btn-lg btn-block">Регистрация</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h1>Lorem ipsum dolor sit.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, officiis quis! Temporibus eius tempora ab tempore quidem, reprehenderit quae ipsam labore error debitis, nihil consequatur tenetur asperiores provident impedit iste, commodi pariatur modi. Deleniti harum quidem omnis, maiores explicabo totam possimus velit neque. Ipsa laborum quidem molestiae perspiciatis dolor sint ullam necessitatibus sit sapiente perferendis debitis amet a, vel incidunt quod voluptates qui dolores ipsam porro cumque omnis, ipsum commodi quia est. Eos ab exercitationem neque ipsa tempore unde maiores, fuga quidem officia assumenda? Quod recusandae consequuntur est sed, voluptate minus eaque animi aut magni a rem, repudiandae neque natus.</p>
+
+    </main>
     
     <aside class=" left-sidebar col-lg-3 col-lg-pull-9 col-md-4 col-md-pull-8">
 
-      <div class="vertical-slider panel panel-info">
+      <div class="vertical-slider panel panel-info hidden-sm hidden-xs">
         <div id="vertical-carousel" class="carousel slide" data-ride="carousel">
           
           <ol class="carousel-indicators">
@@ -102,7 +167,7 @@
         </div>
       </div>
 
-      <div class=" site-search panel panel-info">
+      <div class=" site-search panel panel-info hidden-sm hidden-xs">
         <div class="panel-heading">Поиск</div>
         <div class="panel-body">
           <form action="search">
@@ -118,7 +183,7 @@
         </div>
       </div>
 
-      <div class="user-login panel panel-info">
+      <div class="user-login panel panel-info hidden-sm hidden-xs">
         <div class="panel-heading">Пользователь</div>
         <div class="panel-body">
           <div>
@@ -231,8 +296,42 @@
 
       <div class=" top-films panel panel-info">
         <div class="panel-heading">Рейтинг фильмов</div>
-        <div class="panel-body">
-          Body
+        <div class="top-films__body panel-body">
+          <div class="top-films__list list-group">
+            <a class="top-films__item list-group-item" href="#">
+              <span class="top-films__badge badge">8.9</span>Cras justo odio
+            </a>
+            <a class="top-films__item list-group-item" href="#">
+              <span class="top-films__badge badge">9.9</span>Dapibus ac facilisis in
+            </a>
+            <a class="top-films__item list-group-item" href="#">
+              <span class="top-films__badge badge">9.1</span>Morbi leo risus
+            </a>
+            <a class="top-films__item list-group-item" href="#">
+              <span class="top-films__badge badge">8.7</span>Porta ac consectetur ac
+            </a>
+            <a class="top-films__item list-group-item" href="#">
+              <span class="top-films__badge badge">9.5</span>Vestibulum at eros
+            </a>
+            <a class="top-films__item list-group-item" href="#">
+              <span class="top-films__badge badge">8.9</span>Cras justo odio
+            </a>
+            <a class="top-films__item list-group-item" href="#">
+              <span class="top-films__badge badge">9.9</span>Dapibus ac facilisis in
+            </a>
+            <a class="top-films__item list-group-item" href="#">
+              <span class="top-films__badge badge">9.1</span>Morbi leo risus
+            </a>
+            <a class="top-films__item list-group-item" href="#">
+              <span class="top-films__badge badge">8.7</span>Porta ac consectetur ac
+            </a>
+            <a class="top-films__item list-group-item" href="#">
+              <span class="top-films__badge badge">9.5</span>Vestibulum at eros
+            </a>
+            <a class="top-films__item list-group-item" href="#">
+              <span class="top-films__badge badge">9.5</span>Vestibulum at eros
+            </a>
+          </div>
         </div>
       </div>
 
