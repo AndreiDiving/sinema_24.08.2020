@@ -26,4 +26,17 @@
         }
     }
 
+    &-item {
+
+        &__caption {
+            text-align: center;
+        }
+
+        &__title {
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 0;
+        }
+    }
+
 }
